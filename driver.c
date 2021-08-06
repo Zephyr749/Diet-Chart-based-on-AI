@@ -1,7 +1,8 @@
 #include<stdio.h>
-#include"chromes.h"
 #include<stdlib.h>
 #include<time.h>
+
+#include"chromes.h"
 #include"roulette.h"
 #include"crossover.h"
 

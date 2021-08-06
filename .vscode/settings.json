@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "chromes.h": "c",
+        "roulette.h": "c",
+        "stdio.h": "c"
+    }
+}
