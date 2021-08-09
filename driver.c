@@ -10,7 +10,7 @@ int main(){
 	srand (time(NULL));
 	int i=0,j,k=0,flag=0;
 
-	chrome s2[10], s3[10],child[2];
+	chrome s2[10], s3[10],*child;
 	create_chrome();
 	//print_chrome(cz,10);
 	
@@ -44,8 +44,9 @@ int main(){
    
     print_chrome(s3,k);
     
-    cross(s3);
+    child=cross(s3);
     //print_chrome(child,2);
+    print_chrome(child,2);
 	
 }
 

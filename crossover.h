@@ -6,7 +6,7 @@
 
 
 
-void cross(chrome p[]){
+chrome *cross(chrome p[]){
 	//chrome temp1, temp2;
 	srand (time(NULL));
 
@@ -16,11 +16,15 @@ void cross(chrome p[]){
 	divider1=rand()%4;
 	divider2=rand()%4;
 	
-	printf("index numbers to swap are = %d %d\n\n",divider1,divider2);
+	printf("Index numbers to swap are = %d %d\n\n",divider1,divider2);
 	
 	while(divider1==divider2){
-		divider2=rand()%4+1;
+		
+		divider2=rand()%4;
+		printf("Similar index detected.\nRandomizing...\nIndex numbers to swap are = %d %d\n\n",divider1,divider2);
+		
 	}
+	//printf("Index numbers to swap are = %d %d\n\n",divider1,divider2);
 
 	temp0=p[0].cArray[0][divider1];	
 	temp1=p[0].cArray[1][divider1];		
@@ -50,5 +54,6 @@ void cross(chrome p[]){
 	p[1].total_quantity=calculate_quantity(p[1].cArray);
 	
 
-	print_chrome(p,2);
+	//print_chrome(p,2);
+	return p;
 }
